@@ -28,5 +28,10 @@ export function Modal({ children }: IModalProps) {
     };
   }, []);
 
-  return createPortal(<div>{children}</div>, elRef.current);
+  return createPortal(
+    <div className="absolute z-[1] top-1/2 -translate-y-[50%] left-1/2 -translate-x-[50%]">
+      {children}
+    </div>,
+    elRef.current
+  );
 }

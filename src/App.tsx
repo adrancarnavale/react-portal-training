@@ -1,5 +1,5 @@
-import { ConfirmationModal } from "./ConfirmationModal";
-import { Modal } from "./Portals/Modal";
+import { ConfirmationModal } from "./components/ConfirmationModal";
+import { Modal } from "./portals/Modal";
 import { useStore } from "./store/store";
 
 export function App() {
